@@ -1,5 +1,5 @@
 #from streamlit_webrtc import webrtc_streamer, RTCConfiguration
-import av
+#import av
 import cv2
 
 
@@ -50,9 +50,9 @@ if uploaded_file is not None:
 ################################# CONTOUR FILTER ##################################################
 if source_index == 0:
         if uploaded_file is not None:
-                 st.caption("**:red[THIS IS ORIGINAL IMAGE.]**")
+                 st.caption("** :red[THIS IS ORIGINAL IMAGE.]**")
                  st.image(uploaded_file)
-                 st.caption("**:red[This IS CONTOUR FILTER.]**")
+                 st.caption("** :red[This IS CONTOUR FILTER.]**")
                  img1 = picture.filter(ImageFilter.CONTOUR)
                  st.image(img1)
 
