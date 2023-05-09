@@ -1,6 +1,7 @@
 
 ## Image Filters Webapp Based On Streamlit
 Apply filters to your image using streamlit based webapp program
+Demo: https://zeeshann1-imagefilters-webapp-streamlit-image-filters-08we9s.streamlit.app/
 
 
 
@@ -14,6 +15,7 @@ Apply filters to your image using streamlit based webapp program
 - DETAIL FILTER
 - EMBOSS FILTER
 - BLUR FILTER
+- REMOVE BACKGROUND
 - ALL
 
 
