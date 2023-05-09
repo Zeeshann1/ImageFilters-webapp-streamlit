@@ -50,9 +50,9 @@ if uploaded_file is not None:
 ################################# CONTOUR FILTER ##################################################
 if source_index == 0:
         if uploaded_file is not None:
-                 #st.caption("<p style='color:red'>ORIGINAL IMAGE</p>")
+                 #st.caption("<p style='color:red'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
                  st.image(uploaded_file)
-                 st.caption("<p style='color:red'>CONTOUR FILTER</p>")
+                 st.caption("<p style='color:red'>CONTOUR FILTER</p>", unsafe_allow_html=True)
                  img1 = picture.filter(ImageFilter.CONTOUR)
                  st.image(img1)
                  st.sidebar.markdown("\n")
