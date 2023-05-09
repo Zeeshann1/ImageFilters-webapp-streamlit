@@ -50,10 +50,9 @@ if uploaded_file is not None:
 ################################# CONTOUR FILTER ##################################################
 if source_index == 0:
         if uploaded_file is not None:
-                 #st.caption(':red[ORIGINAL IMAGE]')
-                 st.caption('A caption with _italics_ :blue[colors] and emojis :sunglasses:')       
+                 #st.caption("<p style='color:red'>ORIGINAL IMAGE</p>")
                  st.image(uploaded_file)
-                 st.caption('** :red[CONTOUR FILTER.]**')
+                 st.caption("<p style='color:red'>CONTOUR FILTER</p>")
                  img1 = picture.filter(ImageFilter.CONTOUR)
                  st.image(img1)
                  st.sidebar.markdown("\n")
@@ -62,9 +61,9 @@ if source_index == 0:
 ################################# SMOOTH MORE FILTER ##################################################
 if source_index == 1:
         if uploaded_file is not None:
-                 st.caption("**:red[ORIGINAL IMAGE.]**")
+                 st.caption("<p style='color:red'>ORIGINAL IMAGE</p>")
                  st.image(uploaded_file)
-                 st.caption("**:red[SMOOTH MORE FILTER.]**")
+                 st.caption("<p style='color:red'>SMOOTH MORE FILTER</p>")
                  img2 = picture.filter(ImageFilter.SMOOTH_MORE)
                  st.image(img2)
                  st.sidebar.markdown("\n")
