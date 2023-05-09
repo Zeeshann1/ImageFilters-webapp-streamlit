@@ -131,7 +131,7 @@ if source_index == 7:
     if uploaded_file is not None:
                  st.caption("<p style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
                  st.image(uploaded_file)
-                 picture = Image.open(uploaded_file3)
+                 picture = Image.open(uploaded_file)
                  fixed = remove(picture)
                  col1.write("Original Image :wrench:")
                  st.image(fixed)
