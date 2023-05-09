@@ -22,7 +22,7 @@ from PIL import Image, ImageFilter            ######## IMPORT MODULE
 
 col1, col2, col3 = st.columns(3)
 
-st.title('Apply Filters to Image')
+col1.title('Apply Filters to Image')
 
 st.sidebar.write("## Upload and download :gear:")
 
