@@ -1,4 +1,4 @@
-from streamlit_webrtc import webrtc_streamer, RTCConfiguration
+#from streamlit_webrtc import webrtc_streamer, RTCConfiguration
 import av
 import cv2
 
