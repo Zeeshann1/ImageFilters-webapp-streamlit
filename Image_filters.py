@@ -133,10 +133,9 @@ if source_index == 7:
                  st.image(uploaded_file)
                  picture = Image.open(uploaded_file)
                  fixed = remove(picture)
-                 col1.write("Original Image :wrench:")
                  st.image(fixed)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img7), "Result.png", "image/png")                       
+                 st.sidebar.download_button("Download Result Image", convert_image(fixed), "Result.png", "image/png")                       
 
 ################################# ALL FILTERS ##################################################
 
@@ -180,5 +179,11 @@ if source_index == 8:
         img7 = picture.filter(ImageFilter.GaussianBlur(radius=2))
         col2.image(img7)
         col2.download_button("Download Result", convert_image(img7), "Result.png", "image/png")
+        
+        col1.caption("<p style='color:blue;font-weight:bold'>REMOVE BACKGROUND</p>", unsafe_allow_html=True)
+        picture = Image.open(uploaded_file)
+        fixed = remove(picture)
+        st.image(fixed)
+        st.sidebar.download_button("Download Result Image", convert_image(fixed), "Result.png", "image/png")
 
 
