@@ -130,41 +130,41 @@ if source_index == 6:
 if source_index == 7:
         if uploaded_file is not None:
                  #st.balloons()
-                 col1.caption("<p style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
                  col1.image(uploaded_file)
                  col1.download_button("Download Result", convert_image(picture), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>CONTOUR FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>CONTOUR FILTER</p>", unsafe_allow_html=True)
                  img1 = picture.filter(ImageFilter.CONTOUR)
                  col1.image(img1)
                  col1.download_button("Download Result", convert_image(img1), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>SMOOTH MORE FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>SMOOTH MORE FILTER</p>", unsafe_allow_html=True)
                  img2 = picture.filter(ImageFilter.SMOOTH_MORE)
                  col2.image(img2)
                  col2.download_button("Download Result", convert_image(img2), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>SHARPEN FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>SHARPEN FILTER</p>", unsafe_allow_html=True)
                  img3 = picture.filter(ImageFilter.SHARPEN)
                  col3.image(img3)
                  col3.download_button("Download Result", convert_image(img3), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>EDGE ENHANCE MORE FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("style='color:red;font-weight:bold'>EDGE ENHANCE MORE FILTER</p>", unsafe_allow_html=True)
                  img4 = picture.filter(ImageFilter.EDGE_ENHANCE_MORE)
                  col1.image(img4)
                  col1.download_button("Download Result", convert_image(img4), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>DETAIL FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("<style='color:red;font-weight:bold'>DETAIL FILTER</p>", unsafe_allow_html=True)
                  img5 = picture.filter(ImageFilter.DETAIL)
                  col2.image(img5)
                  col2.download_button("Download Result", convert_image(img5), "Result.png", "image/png")
                  
-                 col1.caption("<p style='color:red;font-weight:bold'>EMBOSS FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>EMBOSS FILTER</p>", unsafe_allow_html=True)
                  img6 = picture.filter(ImageFilter.EMBOSS)
                  col3.image(img6)
                  col3.download_button("Download Result", convert_image(img6), "Result.png", "image/png")
 
-                 col1.caption("<p style='color:red;font-weight:bold'>Blur FILTER</p>", unsafe_allow_html=True)
+                 col1.caption("< style='color:red;font-weight:bold'>Blur FILTER</p>", unsafe_allow_html=True)
                  img7 = picture.filter(ImageFilter.GaussianBlur(radius=2))
                  col2.image(img7)
                  col2.download_button("Download Result", convert_image(img7), "Result.png", "image/png")
