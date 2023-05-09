@@ -1,7 +1,7 @@
 
 ## Image Filters Webapp Based On Streamlit
-Apply filters to your image using streamlit based webapp program
-Demo: https://zeeshann1-imagefilters-webapp-streamlit-image-filters-08we9s.streamlit.app/
+- Apply filters to your images using streamlit based webapp program </p>
+- [Demonstration](https://zeeshann1-imagefilters-webapp-streamlit-image-filters-08we9s.streamlit.app/)
 
 
 
@@ -51,9 +51,9 @@ How to Run:
 ```bash
 streamlit run Image_filters.py
 ```
-## Results
-Sharpen Filter
-<img src="Result2.png"/>
+# Results
+## Remove Background
+<img src="bg.png"/>
 
-Apply all filters at once
-<img src="Result1.png"/>
+## Apply all filters at once
+<img src="all.png"/>
