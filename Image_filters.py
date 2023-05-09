@@ -131,6 +131,7 @@ if source_index == 7:
     if uploaded_file is not None:
                  st.caption("<p style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
                  st.image(uploaded_file)
+                 st.caption("<p style='color:blue;font-weight:bold'>REMOVE BACKGROUND</p>", unsafe_allow_html=True)
                  picture = Image.open(uploaded_file)
                  fixed = remove(picture)
                  st.image(fixed)
@@ -183,7 +184,7 @@ if source_index == 8:
         col1.caption("<p style='color:blue;font-weight:bold'>REMOVE BACKGROUND</p>", unsafe_allow_html=True)
         picture = Image.open(uploaded_file)
         fixed = remove(picture)
-        st.image(fixed)
-        st.sidebar.download_button("Download Result Image", convert_image(fixed), "Result.png", "image/png")
+        col1.image(fixed)
+        col1.download_button("Download Result Image", convert_image(fixed), "Result.png", "image/png")
 
 
