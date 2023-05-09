@@ -26,7 +26,7 @@ st.title('Apply Filters to Image')
 
 st.sidebar.write("## Upload and download :gear:")
 
-source = ("CONTOUR FILTER", "SMOOTH MORE FILTER", "SHARPEN FILTER", "EDGE ENHANCE MORE FILTER", " DETAIL FILTER", "EMBOSS FILTER","BLUR FILTER", "REMOVE BACKGROUND" "ALL")
+source = ("CONTOUR FILTER", "SMOOTH MORE FILTER", "SHARPEN FILTER", "EDGE ENHANCE MORE FILTER", " DETAIL FILTER", "EMBOSS FILTER","BLUR FILTER", "REMOVE BACKGROUND", "ALL")
 source_index = st.sidebar.selectbox("Select Filter", range(
         len(source)), format_func=lambda x: source[x])
 
@@ -128,7 +128,7 @@ if source_index == 6:
 ################################# Background Remove ##################################################
 
 if source_index == 7: 
-    if uploaded_file3 is not None:
+    if uploaded_file is not None:
                  st.caption("<p style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
                  st.image(uploaded_file)
                  fixed = remove(uploaded_file)
