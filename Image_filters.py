@@ -56,7 +56,7 @@ if source_index == 0:
                  img1 = picture.filter(ImageFilter.CONTOUR)
                  st.image(img1)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")       
+                 st.sidebar.download_button("Download Result Image", convert_image(img1), "Result.png", "image/png")       
 
 ################################# SMOOTH MORE FILTER ##################################################
 if source_index == 1:
@@ -67,7 +67,7 @@ if source_index == 1:
                  img2 = picture.filter(ImageFilter.SMOOTH_MORE)
                  st.image(img2)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")
+                 st.sidebar.download_button("Download Result Image", convert_image(img2), "Result.png", "image/png")
 
 ################################# SHARPEN FILTER ##################################################
 if source_index == 2:
@@ -89,7 +89,7 @@ if source_index == 3:
                  img4 = picture.filter(ImageFilter.EDGE_ENHANCE_MORE)
                  st.image(img4)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")       
+                 st.sidebar.download_button("Download Result Image", convert_image(img4), "Result.png", "image/png")       
 
 ################################# DETAIL FILTER ##################################################
 if source_index == 4:
@@ -100,7 +100,7 @@ if source_index == 4:
                  img5 = picture.filter(ImageFilter.DETAIL)
                  st.image(img5)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")       
+                 st.sidebar.download_button("Download Result Image", convert_image(img5), "Result.png", "image/png")       
 
 ################################# EMBOSS FILTER ##################################################
 if source_index == 5:
@@ -111,7 +111,7 @@ if source_index == 5:
                  img6 = picture.filter(ImageFilter.EMBOSS)
                  st.image(img6)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")       
+                 st.sidebar.download_button("Download Result Image", convert_image(img6), "Result.png", "image/png")       
 
 
 ################################# EMBOSS FILTER ##################################################
@@ -123,7 +123,7 @@ if source_index == 6:
                  img7 = picture.filter(ImageFilter.GaussianBlur(radius=2))
                  st.image(img7)
                  st.sidebar.markdown("\n")
-                 st.sidebar.download_button("Download Result Image", convert_image(img3), "Result.png", "image/png")       
+                 st.sidebar.download_button("Download Result Image", convert_image(img7), "Result.png", "image/png")       
 
 ################################# ALL FILTERS ##################################################
 
