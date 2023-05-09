@@ -22,7 +22,7 @@ from PIL import Image, ImageFilter            ######## IMPORT MODULE
 
 col1, col2, col3 = st.columns(3)
 
-col1.title('Apply Filters to Image')
+st.title('Apply Filters to Image')
 
 st.sidebar.write("## Upload and download :gear:")
 
@@ -142,6 +142,8 @@ if source_index == 7:
 
 if source_index == 8:
     if uploaded_file is not None:
+        st.title('Apply Filters to Image')
+
         col1.caption("<p style='color:red;font-weight:bold'>ORIGINAL IMAGE</p>", unsafe_allow_html=True)
         col1.image(uploaded_file)
         col1.download_button("Download Result", convert_image(picture), "Result.png", "image/png")
