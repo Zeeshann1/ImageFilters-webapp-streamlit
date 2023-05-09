@@ -148,7 +148,7 @@ if source_index == 7:
         col3.image(img3)
         col3.download_button("Download Result", convert_image(img3), "Result.png", "image/png")
 
-        col1.caption("<p style='color:red;font-weight:bold'>EDGE ENHANCE MORE FILTER</p>", unsafe_allow_html=True)
+        col1.caption("<p style='color:red;font-weight:bold'>EDGE ENHANCE FILTER</p>", unsafe_allow_html=True)
         img4 = picture.filter(ImageFilter.EDGE_ENHANCE_MORE)
         col3.image(img4)
         col3.download_button("Download Result", convert_image(img4), "Result.png", "image/png")
